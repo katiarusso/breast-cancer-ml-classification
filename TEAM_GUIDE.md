@@ -7,7 +7,7 @@ Welcome to the team! This guide explains how to collaborate using Git + GitHub +
 ## 📦 Getting Started
 
 ### 1. Clone the repository
-#### Option A – In VS Code:
+#### In VS Code:
 - Open VS Code
 - Press `Ctrl+Shift+P` → Type: `Git: Clone`
 - Paste the repo URL: `https://github.com/katiarusso/AI-Lab.git`
