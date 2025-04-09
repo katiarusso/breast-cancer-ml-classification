@@ -13,13 +13,6 @@ Welcome to the team! This guide explains how to collaborate using Git + GitHub +
 - Paste the repo URL: `https://github.com/katiarusso/AI-Lab.git`
 - Choose a folder (e.g. Desktop)
 - Click **Yes** to open the repo
-
-#### Option B – In Terminal:
-```bash
-git clone https://github.com/katiarusso/AI-Lab.git
-cd AI-Lab
-```
-
 ---
 
 ## 🔄 Daily Workflow
