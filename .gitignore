@@ -1,2 +1,5 @@
 # Ignore all local data files
 Data/
+
+# Ignore macOS system files
+.DS_Store

@@ -7,12 +7,20 @@ Welcome to the team! This guide explains how to collaborate using Git + GitHub +
 ## 📦 Getting Started
 
 ### 1. Clone the repository
-#### In VS Code:
 - Open VS Code
-- Press `Ctrl+Shift+P` → Type: `Git: Clone`
+- Press `Ctrl+Shift+P` (per macOs: `Cmd+Shift+P`) → Type: `Git: Clone`
 - Paste the repo URL: `https://github.com/katiarusso/AI-Project.git`
-- Choose a folder (e.g. Desktop)
+- Choose a folder where to clone the repo, possibly a new empty one (e.g. Desktop/AI-Project)
 - Click **Yes** to open the repo
+
+### 2. Import Data files
+- Create a folder `Data` inside `AI-Project`
+- Create the two folder `SmartSeq` and `DropSeq` inside `Data`
+- Paste the data files inside
+
+#### ⚠️ Note:
+The folder name have to be exactly the ones I wrote, and they are case-sensitive, so the path in the code will work for everyone(Katia è stupida).
+
 ---
 
 ## 🔄 Daily Workflow
@@ -26,18 +34,52 @@ git pull origin main
 > 💡 This updates your local files with the latest version from GitHub.
 
 ### 📝 2. Work on your files
-- Create or edit Jupyter notebooks in the `notebooks/` folder
-- Use descriptive names
+Each one of us will work on a notebook (task specific), in this way we will avoid conflicts with the main notebook `main.ipynb`.
+- Create or edit your notebook in the `notebooks/` folder (e.g., `data_cleaning.ipynb`)
 
-### 💾 3. Save, add, and commit your changes
+### 💾 3. Control check
+- Save the changes (`Ctrl+S` or `Cmd+S`)
+
 ```bash
-git add .
+git status
+```
+> 💡 Check which files you have modified
+
+You should see something like:
+```bash
+Changes not staged for commit:
+  modified:   notebooks/data_cleaning.ipynb
+```
+
+### 💾 4. Add and commit the changes
+
+```bash
+git add notebooks/data_cleaning.ipynb
 git commit -m "Meaningful message (e.g. added PCA analysis for MCF7)"
 ```
 
-### 🚀 4. Push to GitHub
+### 🚀 5. Push to GitHub
 ```bash
 git push origin main
+```
+> 💡 This updates the repo with your changes.
+
+---
+
+### 🚨 In case you modified accidentally other files
+You'll see something like:
+```bash
+git status
+```
+
+```bash
+Changes not staged for commit:
+  modified:   notebooks/data_cleaning.ipynb
+  modified:   notebooks/data_visualization.ipynb
+```
+so after the push, add this step:
+```bash
+git restore notebooks/data_visualization.ipynb
 ```
 
 ---
@@ -48,25 +90,4 @@ git push origin main
 - 📤 Always `git push` after finishing
 - ❗ Only one person edits the **same file at the same time**
 - 🧾 Write clear commit messages
-  
----
-
-## 🛠️ Optional commands
-
-### See which files you’ve modified
-```bash
-git status
-```
-
-### Add a specific file
-```bash
-git add notebooks/my_analysis.ipynb
-```
-
-### Undo uncommitted changes
-```bash
-git checkout -- filename
-```
-
-Happy coding! 💻🧠🧬
 
