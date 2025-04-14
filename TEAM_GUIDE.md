@@ -19,7 +19,7 @@ Welcome to the team! This guide explains how to collaborate using Git + GitHub +
 - Paste the data files inside
 
 #### ⚠️ Note:
-The folder name have to be exactly the ones I wrote, and they are case-sensitive, so the path in the code will work for everyone(Katia è stupida).
+The folder name have to be exactly the ones I wrote, and they are case-sensitive, so the path in the code will work for everyone.
 
 ---
 
