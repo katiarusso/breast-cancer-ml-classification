@@ -16,9 +16,10 @@ This file keeps track of all important variables and datasets used throughout th
 | `cell_stats_mcf`    | Cell Stat (2.2.1)    | Dataset with stats about cells of unfiltered | (383, 7)      |
 | `gene_stats_mcf`    | Gene stat (2.2.2)    | Dataset with stats about genes of unfiltered | (22934, 3)    |
 | `dfs_mcf_f1`        | Filtering (2.5)      | Noise / uninformative entries removed        | (18946, 312)  |
-| `dfs_mcf_norm`      | Normalization (2.7)  | Normalized total counts per cell             | (18946, 312)  |
-| `dist_summary_mcf`  | Dist diagnostic (2.8)| Skewness and Kurtosis per gene               | (18946, 4)    |
-| `dfs_mcf_log`       | Log-Transformation   | Log1p applied to reduce skw and kurt         | (18946, 312)  |
+| `dfs_mcf_f2`        | Filtering (2.5)      | Alias genes removed                          | (18936, 312)  |
+| `dfs_mcf_norm`      | Normalization (2.7)  | Normalized total counts per cell             | (18936, 312)  |
+| `dist_summary_mcf`  | Dist diagnostic (2.8)| Skewness and Kurtosis per gene               | (18936, 4)    |
+| `dfs_mcf_log`       | Log-Transformation   | Log1p applied to reduce skw and kurt         | (18936, 312)  |
 | `dfs_mcf_hvg`       | Top 3000 (2.9)       | Highly Variable Genes based on dispersion    | (3000, 312)   |
 | `dfs_mcf_hvg2`      | Top 3000 (2.9)       | HVG without correlation                      | (3000, 312)   |
 | `dfs_mcf_zscore`    | Z-Score (2.10)       | Standardization to each gene                 | (3000, 312)   |
